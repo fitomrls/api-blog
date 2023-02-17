@@ -17,6 +17,7 @@ class CreateTasksTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->boolean('state')->default(0);
+            $table->tinyInteger('cambios')->unsigned();
             $table->timestamps();
         });
     }
